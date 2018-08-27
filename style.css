@@ -1,0 +1,282 @@
+/*
+Theme Name:     Glass Forever
+Theme URI:      http://gf-dev.recuweb.com/
+Author:         Rafasashi, Laura P
+Author URI:     
+Description:    Glass Forever Theme
+Version:        1.0.0
+License:        GNU General Public License v2 or later
+License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:    glass-forever
+Tags: blog, custom-logo, portfolio, e-commerce, rtl-language-support, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, left-sidebar, right-sidebar, footer-widgets
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;font-family: 'Montserrat', sans-serif;padding:0;border:0;margin:0;vertical-align:baseline}
+body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+
+*,.modal-content{
+	
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cd-nav{
+	
+	background-color:#0E4E96 !important;
+}
+
+.cd-nav .cd-half-block{
+	margin-right: 10% !important;
+	border-top: 2px solid #1590D3 !important;
+}
+
+@media only screen and (min-width: 1170px){
+	
+	.cd-nav .cd-half-block {
+		width: 40% !important;
+		margin: 0px 5% !important;
+	}
+}
+
+.cd-nav .cd-primary-nav a, .cd-nav .cd-sidebar-nav a {
+	
+	font-size: 23px !important;
+	font-family: 'Montserrat', sans-serif !important;
+	color:#1BA0D8 !important;
+}
+
+svg {
+	
+	color:#BDE7FF !important;
+}
+
+.navigation-is-open svg {
+	
+	/*background-color:#167BBF !important;*/
+}
+
+#container{
+	
+	overflow-y: inherit !important;
+	overflow-x: hidden !important;
+	background-color: #053465;
+}
+
+.gf-header{
+	
+	background: url(assets/images/bg-global.jpg);
+	background-color: #6cc8c7;
+	background-repeat: repeat;
+	height: 130px;
+	width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.gf-logo{
+	
+	height: 130px;
+    width: 130px;
+    background: url(assets/images/logo-sg.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    background-color: transparent;
+    position: absolute;
+    left: 60px;
+    top: 40px;
+    z-index: 9999;
+}
+
+.gf-logo a{
+	
+	height: 130px;
+    width: 130px;
+	display: block;
+}
+
+.bg-header-center{
+	
+	height: 100px;
+	width: 350px;
+	background: url(assets/images/bg-header-center.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+	margin: 0 auto;
+}
+
+.bg-header-left {
+	
+	width:120px;
+	height:160px;
+	background: url(assets/images/bg-header-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+	float:left;
+}
+
+.bg-header-right {
+	
+	width:120px;
+	height:160px;
+	background: url(assets/images/bg-header-right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+	float:right;
+}
+
+.gf-body{
+	
+	background: url(assets/images/bg-global.jpg);
+	background-color: #6cc8c7;
+	background-repeat: repeat;
+	position:relative;
+	min-height: 500px;
+}
+
+.cd-nav-trigger {
+	
+	background-color:transparent !important;
+}
+
+
+.container-wrapper {
+	
+	position: absolute;
+	z-index: 8000;
+	width: 100%;
+}
+
+.container {
+
+	position: relative !important;
+}
+
+.gf-body .container {
+
+	min-height: 572px !important;
+}
+
+.cd-footer-nav  .container {
+	min-height: 275px !important;
+}
+									
+@media (min-width: 1200px){
+
+	.gf-body .container, .cd-footer-nav  .container {
+		width: 900px !important;
+	}
+}
+
+.gf-left-side  {
+	
+    height: 320px;
+    width: 190px;
+    left: -230px;
+    top: 100px;
+    position: absolute;
+    background: url(assets/images/frames-left-01.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+
+.gf-right-side {
+	
+    position: absolute;
+    height: 330px;
+    width: 170px;
+    right: -175px;
+    background: url(assets/images/frames-right-01.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    top: 50px;
+    background-size: contain;
+}
+
+.cd-footer-nav {
+	position: relative;
+	height:275px;	
+	background: url(assets/images/bg-floor-01.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+	background-color: #053465;
+	background-position: bottom center;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+@media (min-width: 1350px){
+
+	.cd-footer-nav {
+		background-size: contain;
+	}
+}
+
+.cd-footer-nav .menu {
+	
+	bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+}
+
+.cd-footer-nav .menu li {
+	
+    list-style: none;
+    display: inline-block;
+    margin: 0 14px;
+    font-size: 13px;
+}
+
+
+.cd-footer-nav .menu a {
+	
+    color: #fff;
+}
+
+.gf-left-footer  {
+	
+    height: 240px;
+    width: 200px;
+    left: -220px;
+    bottom: 0;
+    position: absolute;
+    background: url(assets/images/footer-graphic-chair.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+
+.gf-right-footer {
+	
+    position: absolute;
+    height: 335px;
+    width: 185px;
+    right: -140px;
+    bottom: 0;
+    background: url(assets/images/footer-graphic-light.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+}
+
+/*language switcher*/
+
+.lsw-active {
+    font-weight: inherit !important;
+}
+
+.lsw-active a,.lsw-active .lsw-iso,.lsw-active .lsw-language, .lsw-active .lsw-native {
+    color: #fff !important;
+}
+
+.lsw-iso {
+    background: transparent !important;
+    color: #1ba0d8 !important;
+    font-weight: bold !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+}
